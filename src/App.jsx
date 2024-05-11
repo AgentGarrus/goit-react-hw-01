@@ -1,7 +1,9 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
 import Profile from './Profile';
+import FriendList from './FriendList';
+import TransactionHistory from './TransactionHistory';
+import friends from './friends.json';
 import userData from './userData.json';
+import transactions from './transactions.json';
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 };
