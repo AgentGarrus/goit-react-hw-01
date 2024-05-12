@@ -1,19 +1,21 @@
+import './TransactionHistory.css'
+
 const TransactionHistory = ({ items }) => {
   return (
-    <table>
+    <table className='tb-tb'>
       <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+        <tr className='tb-tr'>
+          <th className='tb-th-td'>Type</th>
+          <th className='tb-th-td'>Amount</th>
+          <th className='tb-th-td'>Currency</th>
         </tr>
       </thead>
       <tbody>
         {items.map(item => (
           <tr key={item.id}>
-            <td>{item.type}</td>
-            <td>{item.amount}</td>
-            <td>{item.currency}</td>
+            <td className='tb-th-td'>{item.type}</td>
+            <td className='tb-th-td'>{item.amount}</td>
+            <td className='tb-th-td'>{item.currency}</td>
           </tr>
         ))}
       </tbody>

@@ -1,0 +1,34 @@
+.friendlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friendlist li {
+    display: flex;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.fr-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fr-name {
+    margin: 0;
+}
+
+.online {
+    margin: 0;
+    color: rgb(5, 212, 5);
+}
+
+.offline {
+    margin: 0;
+    color: rgb(255, 0, 0);
+}
